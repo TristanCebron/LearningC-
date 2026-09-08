@@ -1,0 +1,14 @@
+C:\Users\Tristan\Documents\Ucenje_C#\obj\Debug\net10.0\Ucenje_C#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tristan\Documents\Ucenje_C#\obj\Debug\net10.0\Ucenje_C#.AssemblyInfoInputs.cache
+C:\Users\Tristan\Documents\Ucenje_C#\obj\Debug\net10.0\Ucenje_C#.AssemblyInfo.cs
+C:\Users\Tristan\Documents\Ucenje_C#\obj\Debug\net10.0\Ucenje_C#.csproj.CoreCompileInputs.cache
+C:\Users\Tristan\Documents\Ucenje_C#\bin\Debug\net10.0\Ucenje_C#.exe
+C:\Users\Tristan\Documents\Ucenje_C#\bin\Debug\net10.0\Ucenje_C#.deps.json
+C:\Users\Tristan\Documents\Ucenje_C#\bin\Debug\net10.0\Ucenje_C#.runtimeconfig.json
+C:\Users\Tristan\Documents\Ucenje_C#\bin\Debug\net10.0\Ucenje_C#.dll
+C:\Users\Tristan\Documents\Ucenje_C#\bin\Debug\net10.0\Ucenje_C#.pdb
+C:\Users\Tristan\Documents\Ucenje_C#\obj\Debug\net10.0\Ucenje_C#.dll
+C:\Users\Tristan\Documents\Ucenje_C#\obj\Debug\net10.0\refint\Ucenje_C#.dll
+C:\Users\Tristan\Documents\Ucenje_C#\obj\Debug\net10.0\Ucenje_C#.pdb
+C:\Users\Tristan\Documents\Ucenje_C#\obj\Debug\net10.0\Ucenje_C#.genruntimeconfig.cache
+C:\Users\Tristan\Documents\Ucenje_C#\obj\Debug\net10.0\ref\Ucenje_C#.dll
