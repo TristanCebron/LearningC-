@@ -6,7 +6,7 @@ namespace LearningCSharp
     {
         static void Main(string [] args)
         {
-            CSharpBasics3.Studying3();
+            CSharpBasics4.Studying();
         }
     }
 }
