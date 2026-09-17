@@ -6,7 +6,7 @@ namespace LearningCSharp
     {
         static void Main(string [] args)
         {
-            CSharpBasics4.Studying();
+            Calculator.MainCalc();
         }
     }
 }
