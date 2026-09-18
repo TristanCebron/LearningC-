@@ -8,46 +8,74 @@ namespace LearningCSharp
     {
         public static void MainCalc()
         {
-            
             Console.WriteLine("Welcome to the basic calculator. Enter 1 for decimal numbers or press 0 for whole numbers: ");
 
+            Calc();
+
+        }
+        public static void Select()
+        {
+            Console.WriteLine("Now select the operation you wish to do:");
+            Console.WriteLine("+ addition: ");
+            Console.WriteLine("- subtraction:");
+            Console.WriteLine("* multiplication: ");
+            Console.WriteLine("/ division:");
+        }
+
+        public static (int num1, int num2) INTInput()
+        {
+            Console.WriteLine("Enter number one: ");
+
+            int num1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter number two: ");
+
+            int num2 = Convert.ToInt32(Console.ReadLine());
+
+            return (num1, num2);
+        }
+
+        public static (double num1, double num2) DOUBLEInput()
+        {
+            Console.WriteLine("Enter number one: ");
+
+            double num1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Enter number two: ");
+
+            double num2 = Convert.ToDouble(Console.ReadLine());
+
+            return (num1, num2);
+        }
+
+        public static void Calc()
+        {
             if (Convert.ToInt32(Console.ReadLine()) == 0)
             {
-                Console.WriteLine("Enter number one: ");
+                (int num1, int num2) = INTInput();
 
-                int INTnumber1 = Convert.ToInt32(Console.ReadLine());
-
-                Console.WriteLine("Enter number two: ");
-
-                int INTnumber2 = Convert.ToInt32(Console.ReadLine());
-
-                Console.WriteLine("Now select the operation you wish to do:");
-                Console.WriteLine("+ addition: ");
-                Console.WriteLine("- subtraction:");
-                Console.WriteLine("* multiplication: ");
-                Console.WriteLine("/ division:");
-
+                Select();
                 int INTanswer = 0;
                 switch (Console.ReadLine())//Learned to use switch case!
                 {
                     case "+":
-                        INTanswer = INTnumber1 + INTnumber2;
-                        Console.WriteLine("Result: " + INTnumber1 + "  + " + INTnumber2 + " = " + INTanswer);
+                        INTanswer = num1 + num2;
+                        Console.WriteLine("Result: " + num1 + "  + " + num2 + " = " + INTanswer);
                         break;
 
                     case "-":
-                        INTanswer = INTnumber1 - INTnumber2;
-                        Console.WriteLine("Result: " + INTnumber1 + " - " + INTnumber2 + " = " + INTanswer);
+                        INTanswer = num1 - num2;
+                        Console.WriteLine("Result: " + num1 + " - " + num2 + " = " + INTanswer);
                         break;
 
                     case "*":
-                        INTanswer = INTnumber1 * INTnumber2;
-                        Console.WriteLine("Result: " + INTnumber1 + " * " + INTnumber2 + " = " + INTanswer);
+                        INTanswer = num1 * num2;
+                        Console.WriteLine("Result: " + num1 + " * " + num2 + " = " + INTanswer);
                         break;
 
                     case "/":
-                        INTanswer = INTnumber1 / INTnumber2;
-                        Console.WriteLine("Result: " + INTnumber1 + " / " + INTnumber2 + " = " + INTanswer);
+                        INTanswer = num1 / num2;
+                        Console.WriteLine("Result: " + num1 + " / " + num2 + " = " + INTanswer);
                         break;
 
                     default:
@@ -57,41 +85,31 @@ namespace LearningCSharp
             }
             else
             {
-                Console.WriteLine("Enter number one: ");
+                (double num1, double num2) = DOUBLEInput();
 
-                double number1 = Convert.ToDouble(Console.ReadLine());
-
-                Console.WriteLine("Enter number two: ");
-
-                double number2 = Convert.ToDouble(Console.ReadLine());
-
-                Console.WriteLine("Now select the operation you wish to do:");
-                Console.WriteLine("+ addition: ");
-                Console.WriteLine("- subtraction:");
-                Console.WriteLine("* multiplication: ");
-                Console.WriteLine("/ division:");
+                Select();
 
                 double answer = 0;
                 switch (Console.ReadLine())//Learned to use switch case!
                 {
                     case "+":
-                        answer = number1 + number2;
-                        Console.WriteLine("Result: " + number1 + "  + " + number2 + " = " + answer);
+                        answer = num1 + num2;
+                        Console.WriteLine("Result: " + num1 + "  + " + num2 + " = " + answer);
                         break;
 
                     case "-":
-                        answer = number1 - number2;
-                        Console.WriteLine("Result: " + number1 + " - " + number2 + " = " + answer);
+                        answer = num1 - num2;
+                        Console.WriteLine("Result: " + num1 + " - " + num2 + " = " + answer);
                         break;
 
                     case "*":
-                        answer = number1 * number2;
-                        Console.WriteLine("Result: " + number1 + " * " + number2 + " = " + answer);
+                        answer = num1 * num2;
+                        Console.WriteLine("Result: " + num1 + " * " + num2 + " = " + answer);
                         break;
 
                     case "/":
-                        answer = number1 / number2;
-                        Console.WriteLine("Result: " + number1 + " / " + number2 + " = " + answer);
+                        answer = num1 / num2;
+                        Console.WriteLine("Result: " + num1 + " / " + num2 + " = " + answer);
                         break;
 
                     default:
@@ -99,7 +117,6 @@ namespace LearningCSharp
                         break;
                 }
             }
-            
         }
     }
 }
