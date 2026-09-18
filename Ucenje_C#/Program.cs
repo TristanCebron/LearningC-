@@ -6,7 +6,7 @@ namespace LearningCSharp
     {
         static void Main(string [] args)
         {
-            MainClass.MainMethod();
+            Game.MainGame();
         }
     }
 }
